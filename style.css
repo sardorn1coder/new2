@@ -1,0 +1,49 @@
+* {
+    box-sizing: border-box;
+    margin: 0;
+    font-family: system-ui, sans-serif;
+}
+*::before, *::after {
+    box-sizing: inherit;
+}
+img {
+    max-width: 100%;
+    height: auto;
+    vertical-align: middle;
+}
+span, a, label {
+    display: inline-block;
+}
+.page {
+    padding: 40px;
+    min-height: 100svh;
+    background-color: beige;
+}
+.form {
+    margin-bottom: 20px;
+}
+.input, .button {
+    width: 300px;
+    font-size: 24px;
+    padding: 7px 10px;
+    border: 2px solid gray;
+}
+.input:focus, .button:focus {
+    outline: none;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.488);
+    border-color: green;
+}
+.button {
+    width: auto;
+    padding: 7px 30px;
+    cursor: pointer;
+}
+.parts {
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr 1fr;
+    gap: 25px;
+}
+.part {
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.4);
+    padding: 20px;
+}
